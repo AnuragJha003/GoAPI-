@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/go-chi/chi"
-	"github.com/avukadin/goapi/internal/handlers"
-	log "github.com/sirupsen/logrus"
+	"github.com/go-chi/chi"  //useful for web development 
+	"github.com/Anurag003/goapi/internal/handlers" //the handler function apna hi h yeh 
+	log "github.com/sirupsen/logrus"//and the log external library imported make sure it is installed before import
 )
 
 
