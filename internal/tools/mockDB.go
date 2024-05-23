@@ -5,7 +5,7 @@ import (
 )
 
 type mockDB struct{}
-
+//some login and coin details data added in here 
 var mockLoginDetails = map[string]LoginDetails{
 	"alex": {
 		AuthToken: "123ABC",
@@ -36,7 +36,7 @@ var mockCoinDetails = map[string]CoinDetails{
 	},
 }
 
-func(d *mockDB) GetUserLoginDetails(username string) *LoginDetails{
+func(d *mockDB) GetUserLoginDetails(username string) *LoginDetails{ //get user login details 
 
 	var clientData=LoginDetails{}
 	clientData,ok:= mockLoginDetails[username]
@@ -46,7 +46,7 @@ func(d *mockDB) GetUserLoginDetails(username string) *LoginDetails{
 	return &clientData
 }
 
-func(d *mockDB) GetCoinBalance(username string) *CoinDetails{
+func(d *mockDB) GetCoinBalance(username string) *CoinDetails{  //get coin balance function 
 	var clientData=CoinDetails{}
 	clientData,ok:=mockCoinDetails[username]
 
